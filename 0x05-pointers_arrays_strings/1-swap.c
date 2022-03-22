@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- *_strlen -length of a string
- *@s: A pointer to an int that will be changed/updated
+ * swap_int - swap the value of two integers.
  *
- *Return: void that means our answer is correct
+ * @a: first integer.
+ * @b: second integer.
+ *
  */
 
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-int u;
+	int c;
 
-u = 0;
-while (s[u] != '\0')
-{
-u++;
-}
-return (u);
+	c = 0;
+	c = *a;
+	*a = *b;
+	*b = c;
 }
